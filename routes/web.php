@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Here we create a route for the totos index page. We tell the route to look in the TodosController in the index method. 
+//In that index method we are just returning the view for index.blade.php.
+Route::get('todos', 'TodosController@index');
 
-//Here we create a route for the about page. We tell the route to look in the About Controller in the index method. 
-//In that index method we are just returning the view for about.
-Route::get('about', 'AboutController@index');
 
